@@ -1,0 +1,10 @@
+import math
+
+print('Coloque a quantidade de tempo em segundos e descubra as horas e minutos:')
+segundos = int(input())
+hora = segundos//3600
+minutos = segundos%3600//60
+segundos = (segundos%3600)%60
+print('Horas:', hora)
+print('Minutos:', minutos)
+print('Segundos:', segundos)

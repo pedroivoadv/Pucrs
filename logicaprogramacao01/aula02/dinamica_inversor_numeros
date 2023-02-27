@@ -1,0 +1,8 @@
+import math
+
+valor = int(input('Digite um valor inteiro de 4 dígitos: '))
+milha = (valor // 1000)
+centena = (valor%1000)//100
+dezena = ((valor%1000)%100)//10
+unidade = ((valor%1000)%100)%10
+print('O número invertido é: ', unidade*1000 + dezena*100 + centena*10 + milha)

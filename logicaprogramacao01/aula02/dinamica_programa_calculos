@@ -1,0 +1,12 @@
+import math
+
+print('Digite um número')
+n1 = float(input())
+print('Digite outro número')
+n2 = float(input())
+print('A soma dos números é: ', n1 + n2)
+print('A diferença dos números é: ', n1 - n2)
+print('A média dos números é: ', (n1 + n2)/2)
+print('A distância dos números é: ', math.fabs (n1 - n2))
+print('O maior dos dois dos números é: ', (n1 + n2 + math.fabs(n1 - n2))/2)
+print('O menor dos dois dos números é: ', (n1 + n2 - math.fabs(n1 - n2))/2)
