@@ -1,0 +1,13 @@
+nTermos = int(input("informea quantidade de termos: "))
+if nTermos <=0 : print('Numero de termos invalido.')
+else:
+    soma = 0
+    cont = 1
+    numerador = 2
+    denominador = 1
+    while cont <= nTermos:
+        soma = soma + numerador/denominador
+        cont = cont + 1
+        numerador = numerador + 2
+        denominador = denominador + 2
+    print("Soma: ", soma)

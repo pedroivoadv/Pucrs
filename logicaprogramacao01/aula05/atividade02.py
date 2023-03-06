@@ -36,41 +36,41 @@ for cont in range(2000):
     genero = random.choice(["m","f"])
     filhos = random.randint(0,5)
 
-# 1. Media de renda
+    # 1. Media de renda
 
-somaRendas += renda
+    somaRendas += renda
 
-# 2. Média de idades com mais de 3 filhos
+    # 2. Média de idades com mais de 3 filhos
 
-if filhos > 3: 
-    somaIdades += idade
-    qtdMais3Filhos += 1 
+    if filhos > 3: 
+        somaIdades += idade
+        qtdMais3Filhos += 1 
 
-# 3. Quantidade de homenscom menos de 30 anos
+    # 3. Quantidade de homenscom menos de 30 anos
 
-if genero == "m" and idade < 30:
-    qtdHomensMenor30 += 1
+    if genero == "m" and idade < 30:
+        qtdHomensMenor30 += 1
 
 # 4. Media do número de filhos    
-somaFilhos += filhos 
+    somaFilhos += filhos 
 
 # 5. Renda dos homem mais velho
 
-if genero == "m" and idade > idadeHomemMaisVelho:
-    idadeHomemMaisVelho = idade
-    rendaHomemMaisVelho = renda
+    if genero == "m" and idade > idadeHomemMaisVelho:
+        idadeHomemMaisVelho = idade
+        rendaHomemMaisVelho = renda
 
 # 6. idade da mulher com maior renda
 
-if genero == "f" and renda > mulherMaiorRenda:
-    idadeMulherMaiorRenda = idade
-    mulherMaiorRenda = renda
+    if genero == "f" and renda > mulherMaiorRenda:
+        idadeMulherMaiorRenda = idade
+        mulherMaiorRenda = renda
 
 # Mostra Resultado
 
 mediaRenda = somaRendas / totalHab
 mediaMais3Filhos = somaIdades // qtdMais3Filhos
-mediaFilhos = somaFilhos / totalHab
+mediaFilhos = somaFilhos // totalHab
 
 print(f"Media de Renda: {mediaRenda}")
 print(f"Media de idade com mais de 3 filhos: {mediaMais3Filhos}")
