@@ -20,11 +20,11 @@ nota2 = 0
 nota1 = 0
 
 for nota in lista:
-    if nota ==5 : nota5 + 1
-    if nota ==4: nota4 + 1
-    if nota ==3: nota3 + 1
-    if nota ==2: nota2 + 1
-    if nota ==1: nota1 + 1
+    if nota ==5 : nota5 += 1
+    if nota ==4: nota4 += 1
+    if nota ==3: nota3 += 1
+    if nota ==2: nota2 += 1
+    if nota ==1: nota1 += 1
 
 print("quantidade de votos 5: ", nota5)
 print("quantidade de votos 4: ", nota4)
