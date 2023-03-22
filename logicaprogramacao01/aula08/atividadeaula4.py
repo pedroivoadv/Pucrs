@@ -28,8 +28,13 @@ for dados in jogadores:
     estatisticas.append((dados[0], media))
 print (estatisticas)
 
-melhor = estatisticas [0]
-for item in estatisticas:
-    if item > melhor : melhor = item #vai ser na posição 1 pq é a posição da média  
-print("Melhor jogador: ", melhor)
+#melhor = estatisticas [0]
+#for item in estatisticas:
+#    if item > melhor : melhor = item #vai ser na posição 1 pq é a posição da média  
+#print("Melhor jogador: ", melhor)
 
+#correção 
+melhor = estatisticas[0]
+for item in estatisticas:
+  if item[1]>melhor[1]: melhor = item
+print("Melhor jogador: ", melhor)
